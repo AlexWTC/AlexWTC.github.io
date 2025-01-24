@@ -5,7 +5,7 @@ This is a repository to hold *future* class assignments.
 
 # **About Me**  
 ## My Hobbies & Interests:
-###Hobbies
+### Hobbies
  * Ice Hockey  
    I play locally in the Triangle area in a "*Beer League*".
  * Video Games  
@@ -15,7 +15,7 @@ This is a repository to hold *future* class assignments.
  * Reading/Audio Books  
   There are a lot of interesting worlds out their in our minds and books are the best way to find those. Sci-Fi is one of my faviorite genres!
 
-###Other Interests
+### Other Interests
  * Cybersecurity and Privacy  
   I may be a little *paranoid* but it's facisnating the many ways people can "hack" devices. One day, I would like to do something about the privacy of our online informaiton. Online informaiton a little too *open* for my likings right now.
  * Compliance  
