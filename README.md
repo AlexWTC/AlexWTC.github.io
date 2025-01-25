@@ -18,7 +18,7 @@ This is a repository to hold *future* class assignments.
 ### Other Interests
  * Cybersecurity and Privacy  
   I may be a little *paranoid*, but it's fascinating how people can "hack" devices. One day, I would like to do something about the privacy of our online information. Online information is too open for my liking right now.
- * Compliance & Models
+ * Compliance & Models  
   What better way to stay safe than a trusted compliance model telling you precisely what you need to be secure. These are **imperative** if you strive to be safe in today's online world.
 
 ## My All-time Websites:
