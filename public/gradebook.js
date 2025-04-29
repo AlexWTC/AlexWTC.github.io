@@ -17,7 +17,7 @@ function fetchGradeData() {
                   Status: ${xhr.status}`);
       }
       // Call function to update HTML with data
-      populateGradeBook(JSON.parse(xhr.responseText));
+      populateGradebook(JSON.parse(xhr.responseText));
       }
   }).bind(this);
   xhr.open("get", apiRoute, true);
