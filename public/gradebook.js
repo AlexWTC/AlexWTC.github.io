@@ -15,8 +15,15 @@ function fetchGradeData() {
       if(xhr.status !== 200){ 
         console.error(`Could not get grades. \nStatus: ${xhr.status}`);
       }
-      // Call function to update HTML with data
-      populateGradebook(JSON.parse(xhr.responseText));
+      else {
+        try {
+            // Call function to update HTML with data
+            populateGradebook(JSON.parse(xhr.responseText));
+        } catch (e) {
+          console.error("Failed to parse response:", e.message);
+        }
+      }
+      
       }
   }).bind(this);
   xhr.open("get", apiRoute, true);
