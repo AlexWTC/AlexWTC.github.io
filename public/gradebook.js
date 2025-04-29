@@ -13,8 +13,7 @@ function fetchGradeData() {
     if(xhr.readyState === XMLHttpRequest.DONE){
       // Was it successful?
       if(xhr.status !== 200){ 
-        console.error(`Could not get grades. 
-                  Status: ${xhr.status}`);
+        console.error(`Could not get grades. \nStatus: ${xhr.status}`);
       }
       // Call function to update HTML with data
       populateGradebook(JSON.parse(xhr.responseText));
@@ -32,7 +31,7 @@ function populateGradebook(data) {
   let tableElm = document.getElementById("gradebook");
     data.forEach(function(assignment){
       let row = document.createElement("tr");
-      let columns = {};
+      let columns = [];
       columns.name = document.createElement('td');
       columns.name.appendChild(
         // Get full name by concatenating the first_name and last_name
