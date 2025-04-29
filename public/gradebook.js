@@ -7,7 +7,7 @@ function fetchGradeData() {
   // Address of the machine requesting data from
   let apiRoute = "/api/grades";
   // Run anonymous function once request makes change to status
-  xhr.onreadystatechange = function(){
+  xhr.onreadystatechange = (function(){
     let results;
     // Is it completed?
     if(xhr.readyState === xhr.DONE){
@@ -19,7 +19,7 @@ function fetchGradeData() {
       // Call function to update HTML with data
       populateGradeBook(JSON.parse(xhr.responseText));
       }
-  } .bind(this);
+  }).bind(this);
   xhr.open("get", apiRoute, true);
   xhr.send();
 
@@ -32,7 +32,7 @@ function populateGradebook(data) {
   let tableElm = document.getElementById("gradebook");
     data.forEach(function(assignment){
       let row = document.createElement("tr");
-      let columns = [];
+      let columns = {};
       columns.name = document.createElement('td');
       columns.name.appendChild(
         // Get full name by concatenating the first_name and last_name
